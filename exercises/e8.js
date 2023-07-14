@@ -6,6 +6,26 @@
 
 
 export  function getClientWithGreatestBalance(array) {
+  let maxBalance = [array[0]]
+  for (let user of array) {
+    if(user.balance > maxBalance[0].balance) {
+      maxBalance[0] = user;
+    }
+  }
+  return maxBalance;
+  
+}
+
+
+
+// === TEST YOURSELF ===
+// Once you're finished run the test with "npm run test-8"
+// If the test has all tests passed, switch to the next exercise file
+// If any of the tests fails, refactor the code and run the test command after you've fixed the function
+
+
+
+/* export  function getClientWithGreatestBalance(array) {
   let clientWithGreatestBalance = [];
   let maxBalance = array[0].balance;
   let maxBalanceIndex;
@@ -18,11 +38,4 @@ export  function getClientWithGreatestBalance(array) {
   clientWithGreatestBalance.push(array[maxBalanceIndex]);
   return clientWithGreatestBalance;
   
-}
-
-
-
-// === TEST YOURSELF ===
-// Once you're finished run the test with "npm run test-8"
-// If the test has all tests passed, switch to the next exercise file
-// If any of the tests fails, refactor the code and run the test command after you've fixed the function
+} */

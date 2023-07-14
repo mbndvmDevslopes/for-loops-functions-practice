@@ -14,7 +14,6 @@ export function getClientsWithBalanceOverOneHundred(array) {
     }
   }
   return clientsBalanceOverHundred;
-  //console.log(clientsBalanceOverHundred)
 }
 
 

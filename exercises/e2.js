@@ -5,9 +5,9 @@
 export function getNumbersWithSquareRoots(max) {
   // Your code goes here...
   let intSqrRoot=[]
-  for(let i=0; i<max; i++) {
-  if(Number.isInteger(Math.sqrt(i)))
-   intSqrRoot.push(i);
+  for(let i = 0; i * i < max; i++) {
+ 
+   intSqrRoot.push(i * i);
   }
   return intSqrRoot;
 }

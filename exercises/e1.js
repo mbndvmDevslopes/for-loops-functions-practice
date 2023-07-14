@@ -5,7 +5,7 @@
 
 export function getFirstTenNumbers() {
   let num =[]
-  for(let i=1; i<11; i++){
+  for(let i = 1; i <= 10; i++){
      num.push(i);
      
   }

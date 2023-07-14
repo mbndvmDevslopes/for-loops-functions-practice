@@ -8,12 +8,10 @@
 export function flatArrays(array) {
   let flatArray = [];
   for (let i = 0; i < array.length; i++) {
-    if (array[i].length > 1) {
+    if (array[i]) {
       for (let z = 0 ; z < array[i].length; z++) {
         flatArray.push(array[i][z]);
       }
-    } else {
-      flatArray.push(array[i]);
     }
   }
   return flatArray

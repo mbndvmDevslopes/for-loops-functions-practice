@@ -9,17 +9,12 @@
  * */
 
 export function getAverage(array) {
-  // Your code goes here...
   let sum = 0;
-  for(let i=0; i<array.length; i++) {
+  for(let i = 0; i < array.length; i++) {
    sum += array[i];
   }
   return sum/array.length;
- // console.log(sum/array.length);
 }
-
-let arr = [3,4,5]
-getAverage(arr)
 
 /** 
  * PART 2
@@ -29,17 +24,12 @@ getAverage(arr)
  * */ 
 
 export function getStringSum(str) {
-  // Your code goes here...
   let sum = 0;
-  let arr = str.split('');
-  console.log(arr)
-  for (let i=0; i<arr.length; i++){
-    if(Number(arr[i])) {
-      console.log(sum)
-      sum += Number(arr[i]);
+  for (const c of str) {
+    if(parseInt(c)) {
+      sum += parseInt(c);
     }
   }
- 
   return sum;
 }
 
